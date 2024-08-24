@@ -18,4 +18,6 @@ public class ReviewDTO {
     private String userName;
     private Long bookId;
     private String bookIsbn;
+    /*private UserDTO user;
+    private BookDTO book;*/
 }

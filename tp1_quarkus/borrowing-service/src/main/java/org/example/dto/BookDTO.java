@@ -9,4 +9,5 @@ public class BookDTO {
     private String title;
     private String isbn;
     private String authorName;
+    //private AuthorDTO author;
 }

@@ -3,6 +3,7 @@ package org.example.service;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.WebApplicationException;
+import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.example.client.BookServiceClient;
 import org.example.client.UserServiceClient;
 import org.example.dto.BookDTO;
@@ -22,9 +23,11 @@ public class BorrowingService {
     BorrowingRepository borrowingRepository;
 
     @Inject
+    @RestClient
     BookServiceClient bookServiceClient;
 
     @Inject
+    @RestClient
     UserServiceClient userServiceClient;
 
     public Borrowing createBorrowing(Long bookId, Long userId) {

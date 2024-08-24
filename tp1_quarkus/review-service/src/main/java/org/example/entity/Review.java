@@ -47,7 +47,7 @@ public class Review {
 
     @ManyToOne
     @JoinColumn(name = "book_id", nullable = false)
-    private BookDTO bookDTO;
+    private Book book;
 
 
 }

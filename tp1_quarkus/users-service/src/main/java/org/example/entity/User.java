@@ -26,4 +26,6 @@ public class User {
 
     @Column(nullable = false)
     private String password;
+
+    /* un user peut emprunter plusieurs books*/
 }

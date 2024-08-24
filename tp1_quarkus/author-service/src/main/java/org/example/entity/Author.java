@@ -26,5 +26,5 @@ public class Author {
     private LocalDate birthDate;
 
     /*@OneToMany(mappedBy = "author")
-    private List<Book> books;*/
+    private List<Book> books; Relation unidirectionnelle recommandée pour les microservices*/
 }

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.dto.BookDTO;
+import org.example.dto.UserDTO;
 
 import java.time.LocalDateTime;
 
@@ -32,6 +34,12 @@ public class Borrowing {
     @Column(nullable = true)
     private LocalDateTime returnDate;
 
+    @Transient
+    private UserDTO userDTO;
+
+    @Transient
+    private BookDTO bookDTO;
+
     /*
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -47,8 +55,8 @@ public class Borrowing {
     private Book book;
 
     @Transient
-    private UserDto userDto;
+    private UserDTO userDTO;
 
     @Transient
-    private BookDto bookDto;*/
+    private BookDTO bookDTO;*/
 }
